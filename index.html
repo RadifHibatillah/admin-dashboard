@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Admin Responsif Menggunakan HTML CSS & JavaScript</title>
+    <!-- MATERIAL CDN -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" />
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- =================== MULAI KONTAINER =================== -->
+    <div class="container">
+      <!-- =================== MULAI ASIDE =================== -->
+      <aside>
+        <!-- =================== BAGIAN ATAS =================== -->
+        <div class="top">
+          <!-- =================== LOGO =================== -->
+          <div class="logo">
+            <img src="images/rh.logo.jpeg" alt="Logo" />
+          </div>
+          <!-- =================== AKHIR LOGO =================== -->
+
+          <!-- =================== IKON TUTUP =================== -->
+          <div class="close" id="close-btn">
+            <span class="material-icons-sharp">close</span>
+          </div>
+          <!-- =================== AKHIR IKON TUTUP =================== -->
+        </div>
+        <!-- =================== AKHIR BAGIAN ATAS =================== -->
+
+        <!-- =================== MULAI SIDEBAR =================== -->
+        <div class="sidebar">
+          <a href="#">
+            <span class="material-icons-sharp">dashboard</span>
+            <h3>Dasbor</h3>
+          </a>
+          <a href="#" class="active">
+            <span class="material-icons-sharp">perm_identity</span>
+            <h3>Pelanggan</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp">receipt_long</span>
+            <h3>Pesanan</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp">insights</span>
+            <h3>Analitik</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp">mail_outline</span>
+            <h3>Pesan</h3>
+            <span class="message-count">26</span>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp">inventory</span>
+            <h3>Produk</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp">report_gmailerrorred</span>
+            <h3>Laporan</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp">settings</span>
+            <h3>Pengaturan</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp">add</span>
+            <h3>Tambah Produk</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp">logout</span>
+            <h3>Keluar</h3>
+          </a>
+        </div>
+        <!-- =================== AKHIR SIDEBAR =================== -->
+      </aside>
+      <!-- =================== AKHIR ASIDE =================== -->
+
+      <!-- =================== MULAI BAGIAN UTAMA =================== -->
+      <main>
+        <h1>Dasbor</h1>
+
+        <div class="date">
+          <input type="date" />
+        </div>
+        <!-- =================== MULAI RINGKASAN =================== -->
+        <div class="insights">
+          <!-- =================== PENJUALAN =================== -->
+          <div class="sales">
+            <span class="material-icons-sharp">analytics</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Penjualan</h3>
+                <h1>Rp25.024.000</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>81%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">24 Jam Terakhir</small>
+          </div>
+          <!-- =================== AKHIR PENJUALAN =================== -->
+
+          <!-- =================== PENGELUARAN =================== -->
+          <div class="expenses">
+            <span class="material-icons-sharp">bar_chart</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Pengeluaran</h3>
+                <h1>Rp14.590.000</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>32%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">24 Jam Terakhir</small>
+          </div>
+          <!-- =================== AKHIR PENGELUARAN =================== -->
+
+          <!-- =================== PENDAPATAN =================== -->
+          <div class="income">
+            <span class="material-icons-sharp">stacked_line_chart</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Pendapatan</h3>
+                <h1>Rp54.864.000</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>84%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">24 Jam Terakhir</small>
+          </div>
+          <!-- =================== AKHIR PENDAPATAN =================== -->
+        </div>
+        <!-- =================== AKHIR RINGKASAN =================== -->
+
+        <!-- =================== MULAI PESANAN TERBARU =================== -->
+        <div class="recent-orders">
+          <h2>Pesanan Terbaru</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Nama Produk</th>
+                <th>Nomor Produk</th>
+                <th>Pembayaran</th>
+                <th>Status</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- <tr>
+                <td>Drone Mini Lipat</td>
+                <td>85631</td>
+                <td>Belum Dibayar</td>
+                <td class="warning">Tertunda</td>
+                <td class="primary">Detail</td>
+              </tr> -->
+            </tbody>
+          </table>
+
+          <a href="#">Tampilkan Semua</a>
+        </div>
+        <!-- =================== AKHIR PESANAN TERBARU =================== -->
+      </main>
+      <!-- =================== AKHIR BAGIAN UTAMA =================== -->
+
+      <!-- =================== MULAI BAGIAN KANAN =================== -->
+      <div class="right">
+        <!-- =================== BAGIAN ATAS =================== -->
+        <div class="top">
+          <button id="menu-btn">
+            <span class="material-icons-sharp">menu</span>
+          </button>
+          <div class="theme-toggler">
+            <span class="active material-icons-sharp">light_mode</span>
+            <span class="material-icons-sharp">dark_mode</span>
+          </div>
+          <div class="profile">
+            <div class="info">
+              <p>Halo, <b>Radif</b></p>
+              <small class="text-muted">Admin</small>
+            </div>
+            <div class="profile-photo">
+              <img src="images/profil-admin.jpeg" alt="Foto Profil" />
+            </div>
+          </div>
+        </div>
+        <!-- =================== AKHIR BAGIAN ATAS =================== -->
+
+        <!-- =================== PEMBARUAN TERBARU =================== -->
+        <div class="recent-updates">
+          <h2>Pembaruan Terbaru</h2>
+          <div class="updates">
+            <div class="update">
+              <div class="profile-photo">
+                <img src="images/temen (2).png" alt="Foto " />
+              </div>
+              <div class="message">
+                <p><b>Wowi</b> menerima pesanan Keripik Singkong.</p>
+                <small class="text-muted">19 Menit yang Lalu</small>
+              </div>
+            </div>
+            <div class="update">
+              <div class="profile-photo">
+                <img src="images/temen (3).png" alt="Foto " />
+              </div>
+              <div class="message">
+                <p><b>Sasta</b> menerima pesanan Kopi Luwak Gayo</p>
+                <small class="text-muted">20 Menit yang Lalu</small>
+              </div>
+            </div>
+            <div class="update">
+              <div class="profile-photo">
+                <img src="images/temen.png" alt="Foto " />
+              </div>
+              <div class="message">
+                <p><b>Vari</b> menerima pesanan Teh Hijau.</p>
+                <small class="text-muted">21 Menit yang Lalu</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- =================== AKHIR PEMBARUAN TERBARU =================== -->
+
+        <!-- =================== ANALITIK PENJUALAN =================== -->
+        <div class="sales-analytics">
+          <h2>Analitik Penjualan</h2>
+          <!-- =================== ITEM ONLINE =================== -->
+          <div class="item online">
+            <div class="icon">
+              <span class="material-icons-sharp">shopping_cart</span>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>Pesanan Online</h3>
+                <small class="text-muted">24 Jam Terakhir</small>
+              </div>
+              <h5 class="success">+39%</h5>
+              <h3>3.849</h3>
+            </div>
+          </div>
+          <!-- =================== AKHIR ITEM ONLINE =================== -->
+
+          <!-- =================== ITEM OFFLINE =================== -->
+          <div class="item offline">
+            <div class="icon">
+              <span class="material-icons-sharp">local_mall</span>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>Pesanan Offline</h3>
+                <small class="text-muted">24 Jam Terakhir</small>
+              </div>
+              <h5 class="danger">-17%</h5>
+              <h3>1.100</h3>
+            </div>
+          </div>
+          <!-- =================== AKHIR ITEM OFFLINE =================== -->
+
+          <!-- =================== ITEM PELANGGAN BARU =================== -->
+          <div class="item customers">
+            <div class="icon">
+              <span class="material-icons-sharp">person</span>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>Pelanggan Baru</h3>
+                <small class="text-muted">24 Jam Terakhir</small>
+              </div>
+              <h5 class="success">+25%</h5>
+              <h3>849</h3>
+            </div>
+          </div>
+          <!-- =================== AKHIR ITEM PELANGGAN BARU =================== -->
+
+          <!-- =================== ITEM TAMBAH PRODUK =================== -->
+          <div class="item add-product">
+            <div>
+              <span class="material-icons-sharp">add</span>
+              <h3>Tambah Produk</h3>
+            </div>
+          </div>
+          <!-- =================== AKHIR ITEM TAMBAH PRODUK =================== -->
+        </div>
+        <!-- =================== AKHIR ANALITIK PENJUALAN =================== -->
+      </div>
+      <!-- =================== AKHIR BAGIAN KANAN =================== -->
+    </div>
+    <!-- =================== AKHIR KONTAINER =================== -->
+    <script src="js/orders.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
